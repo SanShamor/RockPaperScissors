@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,105 +13,107 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RockPaperScissors" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rxd-Pb-vTI">
-                                <rect key="frame" x="20" y="35" width="280" height="498"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bsp-1x-Dbd">
-                                        <rect key="frame" x="0.0" y="0.0" width="280" height="197"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="130"/>
-                                        <state key="normal" title=" 🤡"/>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k3k-sn-UNx">
-                                        <rect key="frame" x="0.0" y="197" width="280" height="150"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="150" id="YXL-0r-ioT"/>
-                                        </constraints>
-                                        <attributedString key="attributedText">
-                                            <fragment content="Let the battle begin">
-                                                <attributes>
-                                                    <color key="NSColor" red="0.1973995566" green="0.4543468356" blue="0.86278653139999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                    <font key="NSFont" size="25" name="MarkerFelt-Thin"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="mYB-ep-u3I">
-                                        <rect key="frame" x="0.0" y="347" width="280" height="96"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDk-pJ-Ztb">
-                                                <rect key="frame" x="0.0" y="0.0" width="80" height="96"/>
-                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="70"/>
-                                                <state key="normal" title="✊🏻"/>
-                                                <connections>
-                                                    <action selector="rockButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v7l-x1-XsG"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vid-lg-ziK">
-                                                <rect key="frame" x="105" y="0.0" width="75" height="96"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                                <state key="normal" title="✌🏻"/>
-                                                <connections>
-                                                    <action selector="scissorsButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yPH-Yk-75z"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lgj-LX-pRd">
-                                                <rect key="frame" x="205" y="0.0" width="75" height="96"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                                <state key="normal" title="🖐🏻"/>
-                                                <connections>
-                                                    <action selector="paperButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7aG-Rc-QZn"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2eL-Wo-dyK">
-                                        <rect key="frame" x="0.0" y="443" width="280" height="55"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="55" id="Bgi-6k-mRO"/>
-                                        </constraints>
-                                        <state key="normal">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="Show results">
-                                                    <attributes>
-                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                        <font key="NSFont" size="23" name="MarkerFelt-Thin"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <integer key="value" value="15"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="resetButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jRV-Nl-zve"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDk-pJ-Ztb">
+                                <rect key="frame" x="20" y="528" width="97" height="120"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="90"/>
+                                <state key="normal" title="✊🏻"/>
+                                <connections>
+                                    <action selector="rockButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v7l-x1-XsG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vid-lg-ziK">
+                                <rect key="frame" x="139" y="528" width="97" height="120"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="90"/>
+                                <state key="normal" title="✌🏻"/>
+                                <connections>
+                                    <action selector="scissorsButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yPH-Yk-75z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bsp-1x-Dbd">
+                                <rect key="frame" x="112.66666666666669" y="79" width="150" height="178"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="🤡">
+                                            <attributes>
+                                                <font key="NSFont" size="150" name=".AppleColorEmojiUI"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k3k-sn-UNx">
+                                <rect key="frame" x="20" y="435.33333333333331" width="335" height="32.666666666666686"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Let the battle begin">
+                                        <attributes>
+                                            <color key="NSColor" red="0.1973995566" green="0.4543468356" blue="0.86278653139999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="30" name="MarkerFelt-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uxN-sa-HMe">
+                                <rect key="frame" x="20" y="683" width="335" height="70"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="2eL-Wo-dyK" firstAttribute="leading" secondItem="rxd-Pb-vTI" secondAttribute="leading" id="AX4-cE-ojX"/>
-                                    <constraint firstAttribute="trailing" secondItem="2eL-Wo-dyK" secondAttribute="trailing" id="fmA-L0-0u7"/>
+                                    <constraint firstAttribute="height" constant="70" id="wwS-ha-eCP"/>
                                 </constraints>
-                            </stackView>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content=" Results">
+                                            <attributes>
+                                                <font key="NSFont" size="35" name="MarkerFelt-Thin"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="resetButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dGK-bY-aa8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lgj-LX-pRd">
+                                <rect key="frame" x="258" y="528" width="97" height="120"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="90"/>
+                                <state key="normal" title="🖐🏻"/>
+                                <connections>
+                                    <action selector="paperButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7aG-Rc-QZn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rxd-Pb-vTI" secondAttribute="bottom" constant="35" id="d6W-dF-aWD"/>
-                            <constraint firstItem="rxd-Pb-vTI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="qZU-Ng-aac"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rxd-Pb-vTI" secondAttribute="trailing" constant="20" id="st2-Sz-H3t"/>
-                            <constraint firstItem="rxd-Pb-vTI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ubp-vw-tPa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k3k-sn-UNx" secondAttribute="trailing" constant="20" id="E7N-yQ-fqq"/>
+                            <constraint firstItem="uxN-sa-HMe" firstAttribute="top" secondItem="vid-lg-ziK" secondAttribute="bottom" constant="35" id="Gx4-ta-rnh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uxN-sa-HMe" secondAttribute="trailing" constant="20" id="IZq-08-2bT"/>
+                            <constraint firstItem="uxN-sa-HMe" firstAttribute="top" secondItem="Lgj-LX-pRd" secondAttribute="bottom" constant="35" id="Jtp-bG-pPN"/>
+                            <constraint firstItem="bsp-1x-Dbd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="KYv-EG-wcn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lgj-LX-pRd" secondAttribute="trailing" constant="20" id="TbD-4U-0bc"/>
+                            <constraint firstItem="bDk-pJ-Ztb" firstAttribute="top" secondItem="k3k-sn-UNx" secondAttribute="bottom" constant="60" id="X6e-Mc-7rn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uxN-sa-HMe" secondAttribute="bottom" constant="25" id="Ypf-Ll-Bdf"/>
+                            <constraint firstItem="uxN-sa-HMe" firstAttribute="top" secondItem="bDk-pJ-Ztb" secondAttribute="bottom" constant="35" id="Zaq-LF-uQP"/>
+                            <constraint firstItem="k3k-sn-UNx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cqy-dG-4mT"/>
+                            <constraint firstItem="vid-lg-ziK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dB9-bA-D2u"/>
+                            <constraint firstItem="bDk-pJ-Ztb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="oAN-Eg-E0J"/>
+                            <constraint firstItem="uxN-sa-HMe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ti6-UH-b6T"/>
+                            <constraint firstItem="bsp-1x-Dbd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xT8-Fl-Qp2"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="paperButton" destination="Lgj-LX-pRd" id="T8W-j2-PVs"/>
-                        <outlet property="resetButton" destination="2eL-Wo-dyK" id="Ch1-kb-dOo"/>
+                        <outlet property="resetButton" destination="uxN-sa-HMe" id="YQ9-t3-bEM"/>
                         <outlet property="robotButton" destination="bsp-1x-Dbd" id="mQu-zz-3W5"/>
                         <outlet property="rockButton" destination="bDk-pJ-Ztb" id="YJW-vi-TjK"/>
                         <outlet property="scissorsButton" destination="vid-lg-ziK" id="c6u-xN-yIv"/>
@@ -120,7 +122,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="35" y="94"/>
+            <point key="canvasLocation" x="34.782608695652179" y="93.75"/>
         </scene>
     </scenes>
     <resources>
