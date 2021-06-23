@@ -8,7 +8,11 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    private var wins = 0
+    private var loses = 0
+    private var draws = 0
+    
     @IBOutlet weak var robotButton: UIButton!
     @IBOutlet weak var statusLabel: UILabel!
     
@@ -16,16 +20,20 @@ class ViewController: UIViewController {
     @IBOutlet weak var paperButton: UIButton!
     @IBOutlet weak var scissorsButton: UIButton!
     
-    
     @IBOutlet weak var resetButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
+        resetButton.backgroundColor = UIColor.orange
+        
         resetButton.isHidden = true
     }
-
-    func play(_ sign: Sign){
+    
+    private func play(_ sign: Sign){
         let computerSign = randomSign()
+        let result = sign.takeTurn(computerSign)
+        
         robotButton.setTitle(computerSign.emoji, for: .normal)
         
         switch sign {
@@ -45,27 +53,36 @@ class ViewController: UIViewController {
         
         resetButton.isHidden = false
         
-        let result = sign.takeTurn(computerSign)
-        
         switch result {
         case .win:
             statusLabel.text = "It's a win!"
+            wins += 1
             self.view.backgroundColor = UIColor.green
         case .lose:
             statusLabel.text = "You lose"
+            loses += 1
             self.view.backgroundColor = UIColor.red
         case .start:
             reset()
         case .draw:
             statusLabel.text = "It's a draw"
+            draws += 1
             self.view.backgroundColor = UIColor.yellow
         }
     }
     
-    func reset() {
+    private func resetResults() {
+        robotButton.setTitle("🤡", for: .normal)
+        view.backgroundColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
         
-        statusLabel.text = "Rock, paper, scissors"
-        self.view.backgroundColor = UIColor.white
+        wins = 0
+        loses = 0
+        draws = 0
+    }
+    
+    private func reset() {
+        statusLabel.text = "Wins: \(wins)\nLoses: \(loses)\nDraws: \(draws)"
+        resetResults()
         
         rockButton.isHidden = false
         paperButton.isHidden = false
@@ -76,7 +93,7 @@ class ViewController: UIViewController {
     }
     
     // Mark: - IBAction
-   
+    
     @IBAction func rockButtonPressed(_ sender: Any) {
         play(.rock)
     }
@@ -86,8 +103,6 @@ class ViewController: UIViewController {
     @IBAction func paperButtonPressed(_ sender: Any) {
         play(.paper)
     }
-    
-    
     @IBAction func resetButtonPressed(_ sender: Any) {
         reset()
     }
