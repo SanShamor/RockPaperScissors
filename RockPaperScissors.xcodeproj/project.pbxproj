@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36725511277F602900159D15 /* it.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 36725510277F602900159D15 /* it.jpeg */; };
 		36DF13FC2680A8B4009E95EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DF13FB2680A8B4009E95EC /* AppDelegate.swift */; };
 		36DF13FE2680A8B4009E95EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DF13FD2680A8B4009E95EC /* SceneDelegate.swift */; };
 		36DF14002680A8B4009E95EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DF13FF2680A8B4009E95EC /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		36725510277F602900159D15 /* it.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = it.jpeg; path = ../../../../Downloads/it.jpeg; sourceTree = "<group>"; };
 		36DF13F82680A8B4009E95EC /* RockPaperScissors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RockPaperScissors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36DF13FB2680A8B4009E95EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36DF13FD2680A8B4009E95EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				36DF13FF2680A8B4009E95EC /* ViewController.swift */,
 				36DF14012680A8B4009E95EC /* Main.storyboard */,
 				36DF14042680A8B6009E95EC /* Assets.xcassets */,
+				36725510277F602900159D15 /* it.jpeg */,
 				36DF14062680A8B6009E95EC /* LaunchScreen.storyboard */,
 				36DF14092680A8B6009E95EC /* Info.plist */,
 				36DF140F2680B130009E95EC /* GameState.swift */,
@@ -130,6 +133,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36725511277F602900159D15 /* it.jpeg in Resources */,
 				36DF14082680A8B6009E95EC /* LaunchScreen.storyboard in Resources */,
 				36DF14052680A8B6009E95EC /* Assets.xcassets in Resources */,
 				36DF14032680A8B4009E95EC /* Main.storyboard in Resources */,
@@ -295,6 +299,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5G6Q84AD3R;
 				INFOPLIST_FILE = RockPaperScissors/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -313,6 +318,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5G6Q84AD3R;
 				INFOPLIST_FILE = RockPaperScissors/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

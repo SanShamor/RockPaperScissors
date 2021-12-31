@@ -35,22 +35,6 @@ class ViewController: UIViewController {
         let result = sign.takeTurn(computerSign)
         
         robotButton.setTitle(computerSign.emoji, for: .normal)
-        
-        switch sign {
-        case .rock:
-            rockButton.isHidden = false
-            paperButton.isHidden = true
-            scissorsButton.isHidden = true
-        case .paper:
-            rockButton.isHidden = true
-            paperButton.isHidden = false
-            scissorsButton.isHidden = true
-        case .scissors:
-            rockButton.isHidden = true
-            paperButton.isHidden = true
-            scissorsButton.isHidden = false
-        }
-        
         resetButton.isHidden = false
         
         switch result {
@@ -82,7 +66,7 @@ class ViewController: UIViewController {
     
     private func reset() {
         statusLabel.text = "Wins: \(wins)\nLoses: \(loses)\nDraws: \(draws)"
-        resetResults()
+        //resetResults()
         
         rockButton.isHidden = false
         paperButton.isHidden = false
