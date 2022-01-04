@@ -30,6 +30,22 @@ class ViewController: UIViewController {
         resetButton.isHidden = true
     }
     
+    
+    // MARK: - IBActions
+    @IBAction func rockButtonPressed(_ sender: Any) {
+        play(.rock)
+    }
+    @IBAction func scissorsButtonPressed(_ sender: Any) {
+        play(.scissors)
+    }
+    @IBAction func paperButtonPressed(_ sender: Any) {
+        play(.paper)
+    }
+    @IBAction func resetButtonPressed(_ sender: Any) {
+        reset()
+    }
+    
+    // MARK: - Methods
     private func play(_ sign: Sign){
         let computerSign = randomSign()
         let result = sign.takeTurn(computerSign)
@@ -74,21 +90,6 @@ class ViewController: UIViewController {
         resetButton.isHidden = false
         
         resetButton.isHidden = true
-    }
-    
-    // Mark: - IBAction
-    
-    @IBAction func rockButtonPressed(_ sender: Any) {
-        play(.rock)
-    }
-    @IBAction func scissorsButtonPressed(_ sender: Any) {
-        play(.scissors)
-    }
-    @IBAction func paperButtonPressed(_ sender: Any) {
-        play(.paper)
-    }
-    @IBAction func resetButtonPressed(_ sender: Any) {
-        reset()
     }
     
 }

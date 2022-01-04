@@ -43,6 +43,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36CE443F27846D56002CA6E5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				36DF140F2680B130009E95EC /* GameState.swift */,
+				36DF14112680B18C009E95EC /* Sign.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		36CE444027846D63002CA6E5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				36DF13FF2680A8B4009E95EC /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		36CE444127846D87002CA6E5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				36DF13FD2680A8B4009E95EC /* SceneDelegate.swift */,
+				36DF13FB2680A8B4009E95EC /* AppDelegate.swift */,
+				36DF14092680A8B6009E95EC /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		36DF13EF2680A8B4009E95EC = {
 			isa = PBXGroup;
 			children = (
@@ -62,16 +89,13 @@
 		36DF13FA2680A8B4009E95EC /* RockPaperScissors */ = {
 			isa = PBXGroup;
 			children = (
-				36DF13FB2680A8B4009E95EC /* AppDelegate.swift */,
-				36DF13FD2680A8B4009E95EC /* SceneDelegate.swift */,
-				36DF13FF2680A8B4009E95EC /* ViewController.swift */,
+				36CE443F27846D56002CA6E5 /* Models */,
+				36CE444027846D63002CA6E5 /* ViewController */,
+				36CE444127846D87002CA6E5 /* App */,
 				36DF14012680A8B4009E95EC /* Main.storyboard */,
+				36DF14062680A8B6009E95EC /* LaunchScreen.storyboard */,
 				36DF14042680A8B6009E95EC /* Assets.xcassets */,
 				36725510277F602900159D15 /* it.jpeg */,
-				36DF14062680A8B6009E95EC /* LaunchScreen.storyboard */,
-				36DF14092680A8B6009E95EC /* Info.plist */,
-				36DF140F2680B130009E95EC /* GameState.swift */,
-				36DF14112680B18C009E95EC /* Sign.swift */,
 			);
 			path = RockPaperScissors;
 			sourceTree = "<group>";
@@ -300,7 +324,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5G6Q84AD3R;
-				INFOPLIST_FILE = RockPaperScissors/Info.plist;
+				INFOPLIST_FILE = RockPaperScissors/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,7 +343,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5G6Q84AD3R;
-				INFOPLIST_FILE = RockPaperScissors/Info.plist;
+				INFOPLIST_FILE = RockPaperScissors/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
